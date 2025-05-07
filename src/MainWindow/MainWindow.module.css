@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+	font-family: kufi;
+
+	/* color theme palette */
+
+	--first: #f5ecd5;
+	--second: #f0bb78;
+	--third: #a4b465;
+	--fourth: #626f47;
+}
+
+.main-container {
+	background-color: var(--third);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	flex-direction: column;
+}
+
+.card {
+	background-color: var(--fourth);
+	width: 25%;
+	height: 30%;
+	min-width: 15rem;
+	min-height: 15rem;
+	padding: 1em;
+	border-radius: 0.5em;
+	box-shadow: 5px 5px 15px rgb(00, 00, 00, 1);
+}
+
+.window-head {
+	font-family: Kufi;
+	display: flex;
+	justify-content: space-between;
+	height: 20%;
+}
+
+.city-name {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+/* ---------------------------------- */
+
+hr {
+	color: wheat;
+}
+
+/* ---------------------------------- */
+
+.window-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	height: 70%;
+}
+
+.window-body > div {
+	height: 90%;
+	flex: 1;
+}
+
+.weather-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+img {
+	/* background-color: black; */
+	height: 60%;
+}
+
+.weather-data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.weather-data > div {
+	/* background-color: darkgreen; */
+}
+
+/* .language-button {
+	text-shadow: 3px 3px 2px black;
+}
+
+.language-button:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.language-button:active {
+	transform: scale(0.95);
+} */
+
+@media (width <500px) {
+	.window-body div {
+		font-size: 0.7rem;
+	}
+}
